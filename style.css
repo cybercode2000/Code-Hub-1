@@ -1,0 +1,926 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.koko {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('green-chameleon-s9CC2SKySJM-unsplash.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.logo img {
+    width: 80px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
+    height: 90px;
+    animation-name: logo;
+    animation-duration: 5s;
+
+}
+.logo img:hover {
+    transition: height 5s, width 5s;
+    width: 120px;
+    transform: rotate(-10deg);
+    height: 120px;
+}
+
+
+.nav-area {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.nav-area li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.nav-area li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 16px;
+}
+
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+    border-radius: 50px;
+
+}
+
+
+.welcome-text {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 28%;
+    text-align: center;
+}
+
+.welcome-text h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.welcome-text a {
+    border: 1px solid #fff;
+    padding: 16px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px; 
+    display: inline-block;
+    color: #fff;
+}
+
+.welcome-text a:hover {
+    background: #fff;
+    color: #333;
+    margin-top: 25px;
+}
+
+i {
+    font-family: san-serif;
+    font-size: 0.9rem;
+    padding-top: 30px;
+}
+
+.header {
+    margin-top: 5rem;
+    font-family: san-serif;
+    font-size: 35px;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0;
+}
+
+
+#image1, #image3 {
+    width: 600px;
+    height: 400px;
+    animation-name: image1;
+    animation-duration: 2s;
+    display: none;
+}
+
+#image1:hover {
+    transition: height 2s, width 2s;
+    width: 630px;
+    height: 430px;
+    opacity: 1;
+}
+
+#image2:hover, #image3:hover{
+    transition: height 2s, width 2s;
+    width: 630px;
+    height: 430px;
+    opacity: 1;
+}
+
+.main, .main2 {
+    width: 500px;
+    margin-left: 65px;
+    margin-top: 60px;
+    padding: 5px;
+    line-height: 35px;
+    text-align: justify;
+    font-family: arial;
+    word-spacing: 3px;
+    display: none;
+}
+.main:hover, .main2:hover, .main1:hover {
+    opacity: 0.8;
+}
+
+
+.main1 {
+    width: 500px;
+    margin-left: 65px;
+    margin-top: 60px;
+    padding: 5px;
+    line-height: 35px;
+    text-align: justify;
+    font-family: arial;
+    word-spacing: 3px;
+}
+
+#name {
+    text-align: center;
+    font-family: elephant;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+
+#button {
+    border: 1px solid black;
+    padding: 16px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 20px;
+    color: black;
+    margin-left: 10rem;
+}
+
+#button:hover {
+    background: rgba(61, 112, 61, 0.521);
+    margin-top: 25px;
+    color: #333;
+}
+
+.content {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.content1 {
+    padding: 40px;
+    display: flex;
+}
+
+#image2 {
+    margin-left: 40px;
+    width: 600px;
+    height: 400px;
+    opacity: 0.9;
+    display: none;
+}
+
+.all {
+    width: 90rem;
+    margin-top: 0.1rem;
+    padding: 80px;
+    display: inline-flex;
+}
+@keyframes damicode2 {
+    0% {
+        transform: translateY(-120px);
+        opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+}
+
+@keyframes image1 {
+    0% {
+    transform: translateX(-110px);
+    opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes content {
+    0% {
+    transform: translateX(100px);
+    opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.html, .css, .js{
+    width: 30%;
+    padding-left: 40px;
+    margin-left: 20px;
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px whitesmoke;
+
+}
+.css {
+    margin-right: 50px;
+}
+
+.html img, .css img, .js img {
+    height: 100px;
+}
+
+
+#head {
+    margin: 20px;
+    font-size: 1.5rem;
+    font-family: elephant;
+    font-weight: bold;
+}
+
+#text {
+    line-height: 25px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+#button1 {
+    border: 1px solid black;
+    padding: 16px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 20px;
+    color: black;
+    margin-right: 1rem;
+}
+
+#button1:hover {
+    background: rgba(61, 112, 61, 0.521);
+    margin-top: 25px;
+    color: #333;
+}
+ .contact-us{
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+#contact {
+    font-family: san-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    animation-name: damicode2;
+    animation-duration: 2s;
+} 
+ 
+#social  {
+    float: left;
+    margin-right: 30px;
+    margin-left: 20px;
+    animation-name: thebtn;
+    animation-duration: 2s;
+
+}
+.header-service {
+    margin-top: 1.8rem;
+    font-family: san-serif;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    animation-name: damicode2;
+    animation-duration: 2s;
+}
+.all-first {
+    padding: 80px;
+    display: block;
+}
+
+#img{ 
+    height: 70px;
+    width: 70px;
+    border-radius: 30px;
+}
+
+
+#img:hover {
+    width: 100px;
+    margin-top: 30px;
+    transition: width 2s ease-out;
+}
+
+#all{
+     margin-left: 500px; 
+     margin-top: 20px;
+} 
+
+.footer {
+    background: rgba(69, 159, 189, 0.918);
+    height: 20px;
+    margin-top: 60px;
+    padding: 30px;
+    text-align: center;
+    font-family: arial;
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+.alla {
+    width: 95rem;
+    margin-left: 0.2rem;
+    padding: 30px;
+    padding-left: 70px;
+    padding-top: 1px;
+    display: inline-flex;
+}
+.dami {
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 17px;
+    font-family: arial;
+    text-align: center;
+    padding-bottom: 4px;
+}
+.scroll {
+    width: 10px;
+    margin-left: 90%;
+    border-radius: 90%;
+}
+
+.hellome {
+    background: rgba(69, 159, 189, 0.918);
+    height: 100px;
+}
+
+.firstext {
+    width: 560px;
+    margin-left: 16%;
+    margin-top: 170px;
+    animation-name: damicode;
+    animation-duration: 2s;
+}
+.firstext span {
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.firstext p {
+    font-family: arial;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    word-spacing: 1px;
+    
+    
+}
+
+.aboutform {
+    display: inline-flex;
+    width: 97%;
+    margin-top: 0px;
+    background: rgba(69, 159, 189, 0.918);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.secondext {
+    margin-top: 12px;
+    margin-left: 5px;
+    animation-name: damicode1;
+    animation-duration: 2s;
+    
+}
+.secondext label {
+    font-size: 17px;
+    font-family: arial;
+}
+
+.secondext input {
+    width: 170%;
+    margin-top: 10px;
+    height: 30px;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 175%;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.secondext button {
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+    background: white;
+    width: 175%;
+    border: 1px solid gray;
+    height: 45px;
+}
+
+.secondext input:focus, .secondext textarea:focus{
+    padding: 5px;
+    color: white;
+    background: black;
+}
+
+.secondext button:hover {
+    background: black;
+    color: white;
+    border: 1px solid gray;
+}
+
+#the {
+    font-size: 10px;
+    margin-top: 5px;
+    font-family: arial;
+}
+
+.secondtext {
+    margin-top: 145px;
+    margin-left: 5px;
+    
+}
+.secondext label {
+    font-size: 17px;
+    font-family: arial;
+}
+
+.secondtext input {
+    width: 110%;
+    margin-top: 10px;
+    height: 30px;
+}
+.secondtext button {
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+    background: white;
+    width: 115%;
+    border: 1px solid gray;
+    height: 45px;
+}
+
+.secondtext input:focus, .secondtext textarea:focus{
+    padding: 5px;
+    color: white;
+    background: black;
+}
+
+.secondtext button:hover {
+    background: black;
+    color: white;
+    border: 1px solid gray;
+}
+
+#the {
+    font-size: 10px;
+    margin-top: 5px;
+    font-family: arial;
+}
+
+#already {
+    margin-top: 10px;
+    font-family: arial;
+    font-size: 13px;
+}
+
+#already a {
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+}
+
+#already a:hover {
+    color: black;
+    font-size: 16px;
+}
+
+.firsttext {
+    width: 560px;
+    margin-left: 16%;
+    margin-top: 200px;
+
+}
+.firsttext span {
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.firsttext p {
+    font-family: arial;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 22px;
+    word-spacing: 1px;
+}
+
+button a {
+    text-decoration: none;
+    color: blue;
+}
+
+#commentpage {
+    display: none;
+}
+
+#bigsearch {
+    width: 110%;
+    background: transparent;
+    margin-top: 20px;
+    border-radius: none;
+    border: 1px solid gray;
+    height: 40px;
+    background: url('mr.png');
+    background-repeat: no-repeat;
+    background-position: 2px;
+    padding-left: 40px;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    background-size: 30px; 
+
+}
+.ita {
+    font-style: italics;
+    font-family: san-serif;
+    color: white;
+    animation-name: damicode1;
+    animation-duration: 3s;
+
+}
+.error {
+    display: none;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid red;
+    border-top: 0px;
+    margin-left: 23%;
+    font-family: arial;
+    display: none;
+    color: red;
+}
+#scrollup {
+    border-radius: 20px;
+    height: 60px;
+    width: 60px;
+    margin-left: 90%;
+}
+
+@keyframes damicode {
+    0% {
+    transform: translateX(-100px);
+    opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes damicode1 {
+    0% {
+    transform: translateX(100px);
+    opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#codehub {
+    animation-name: damicode;
+    animation-duration: 3s;
+}
+
+@keyframes thebtn {
+    0% {
+    transform: translateY(100px);
+    opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#getstarted {
+    animation-name: thebtn;
+    animation-duration: 3s;
+
+}
+
+@keyframes logo {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% { 
+        opacity: 1;
+    }
+}
+
+.html {
+    animation-name: damicode;
+    animation-duration: 2s;
+}
+.js {
+    animation-name: damicode1;
+    animation-duration: 2s;
+}
+.css {
+    animation-name: thebtn;
+    animation-duration: 2s;
+}
+
+.all-first img:hover {
+    transition: height 2s, width 2s;
+    width: 150px;
+    transform: rotate(-10deg);
+    height: 130px;
+
+}
+
+.comment {
+    width: 40%;
+    padding-left: 40px;
+    margin-left: 20px;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+    animation-name: logo;
+    animation-duration: 7s;
+}
+
+
+.yes:hover {
+    opacity: 0.8;
+}
+
+.comment img {
+    height: 150px;
+    width: 150px;
+    border-radius: 60%;
+}
+
+.comment img:hover {
+    animation-name: waliy;
+    animation-duration: 0.5s;
+}
+
+@keyframes waliy {
+    0% {
+        margin-left: 0px;
+    }
+    50% {
+        margin-left: 10%;
+
+    }
+    75% {
+        margin-right: 10%;
+    }
+    100% {
+        margin: 0px;
+    }
+}
+
+.browse {
+    border: 2px solid rgba(77, 158, 185, 0.205);
+    padding: 16px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 20px;
+    color: black;
+    margin-right: 1rem;
+    margin-left: 5rem;
+    border-radius: 5%;
+}
+
+.footer {
+    background: rgba(69, 159, 189, 0.918);
+    margin-top: 30px;
+    padding-top: 30px;
+    font-family: arial;
+    text-align: center;
+}
+
+.all-first1 {
+        display: flex;
+        justify-content: space-between;
+        /* padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 50px; */
+        padding: 80px;
+}
+
+
+
+
+@media screen and (max-width: 300px){
+    body {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .logo img {
+        height: 50px;
+        width: 50px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .nav-area {
+        padding-top: 20px;
+        margin-left: 120px;
+    }
+    .nav-area li {
+       margin: 0px;
+       margin-top: 20px;
+    }
+    .nav-area li a {
+        font-size: 11px;
+    }
+    .welcome-text {
+        
+        position: absolute;
+        width: 600px;
+        margin: 80% -0%;
+        height: 300px;
+        float: center;
+        font-size: 13px;
+    }
+    .welcome-text h1 {
+        font-size: 30px;
+    }
+    .header {
+        font-size: 23px;
+        margin-top: 3rem;
+    }
+    #image1, #image3, #image2 {
+        width: 230px;
+        height: 265px;
+    }
+    #image1:hover, #image3:hover {
+        width: 210px;
+        height: 210px;
+        margin-left: 2rem;
+    }
+
+    .main, .main1, .main2 {
+        margin-top: 0px;
+        font-size: 10px;
+        width: 250px;
+        margin-left: 15px;
+        padding-top: 0px;
+        line-height: 23px;
+        text-align: justify;
+    }
+    
+    #name {
+        font-size: 15px;
+        
+    }
+    .content, .content1 {
+        display: flex;
+        justify-content: center;
+        /* width: 80%; */
+        /* padding-right: 15%; */
+        /* padding-left: 15%; */
+    }
+    #button {
+    
+        font-size: 10px;
+        display: inline-block;
+        margin-top: 16px;
+        padding: 5px 5px 5px 15px;
+        width: 80px;
+        height: 20px;
+        color: black;
+        margin-left: 3rem;
+    }
+
+    .header-service {
+        font-size: 23px;
+    }
+
+    .all {
+        display: block;
+        width: 5rem;
+        margin-left: 0px;
+    }
+
+    .html, .css, .js {
+    
+        display: block;
+        margin: 0px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        width: 70%;
+        margin-top: 40px;
+        align-items: center;
+        margin-left: 50px;
+        
+        
+    }
+    .all-first {
+        display: block;
+        margin-left: 5px;
+        justify-content: center;
+        padding: 0px; 
+    }
+    .aboutform {
+        display: block;
+    }
+    .firstext {
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-bottom: 10%;
+    }
+    .firstext span {
+        margin-left: 22%;
+    }
+
+    .firstext p {
+        margin-left: 5%;
+        font-style: italics;
+    }
+
+    .secondext input, .secondext textarea, .secondext button{
+        width: 90%;
+    }
+
+
+
+}
+.menubar {
+    width: 100%;
+    background: red;
+}
+
+.search {
+    font-family: arial; 
+    font-size: 20px;
+}

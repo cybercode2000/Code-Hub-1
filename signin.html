@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Sign In</title>
+</head>
+<body>
+        <div class="hellome" id="me">
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png"></a>
+            </div>
+            <ul class="nav-area">
+                <li><a id="home" href="index.html"> Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="signin.html" style="background: #fff; color: #333; border-radius: 50px;" href="index.html">Sign In</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="error">Password or email address is incorrect pls kindly enter the valid email and password</div>
+
+</div>
+    <div class="aboutform" style="background: white;">
+        <div class="firsttext">
+            <span>Log In</span>
+            <p><i>aliquam est tempore. Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Alias, porro.</i></p>
+        </div>
+        <div class="secondtext">
+            <form action="">
+            <label for="firstname"> Email <br>
+                <input id="email" type="text" required>
+            </label><br>
+            <label for="firstname"> Password <br>
+                <input id="pass" type="password" required>
+            </label><br>
+            <button><a href="#" id="btn">Sign In</a></button>
+                <p id="already">Do you want to create an account? <span><a href="signup.html">Create an account</a></span></p>
+                </form>
+        </div>
+    </div>
+<div class="footer">
+    <footer>
+        CODE HUB &copy All right reserved 2019
+
+    </footer>
+    <script>
+    let erro = document.querySelector('.error');
+let btn = document.querySelector('#btn');
+function login(){
+let email = document.querySelector('#email');
+let password = document.querySelector('#pass');
+
+
+const user = ['damicodd123@gmail.com', 'oluwadamilareawopetu@gmail.com', 'admin@gmail.com'];
+const pass = ['rasheed', 'dare', 'admin'];
+    if(user[0] === email.value && pass[0] === password.value || user[1] === email.value && pass[1] === password.value || user[2] === email.value && pass[2] === password.value){
+    btn.href = 'admin.html';
+    }
+    else {
+        erro.style.display = 'block';
+    }
+
+}
+
+
+
+btn.addEventListener('click', login);
+
+
+    </script>
+</body>
+</html>

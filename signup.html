@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Sign Up</title>
+</head>
+<body>
+        <div class="hellome" id="me">
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png"></a>
+            </div>
+            <ul class="nav-area">
+                <li><a id="home" href="index.html"> Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="signup.html" style="background: #fff; color: #333; border-radius: 50px;">Sign Up</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+            </ul>
+        </div>
+        </div>
+
+
+</div>
+<div class="error">Please fill all the available fields</div>
+
+<div id="title" style="margin-top: 5%; display: none">
+    <center><span style="font-family: Roboto;font-size: 50px;
+    font-weight: bold; text-align: center;"><u>Verification Code Sent</u></span></center>
+    <p id="text" style="margin-top: 5px; font-family: arial; font-size: 18px; padding: 5%; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At incidunt corporis repellendus veritatis atque totam dolor obcaecati, reprehenderit id sunt! Quod perspiciatis eos aspernatur maxime. Quibusdam quod vitae tempore aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sequi nemo aliquam quod magni quas. Dolor velit aliquid qui, amet laudantium error quia. Quis atque, ab vero nobis nam aliquid! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eligendi doloremque necessitatibus iusto? Quia ullam aliquid totam, velit explicabo laboriosam! Totam porro ad doloremque ratione ipsa aliquid modi odit est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, doloribus? Alias qui perferendis, commodi rerum veniam placeat consequatur ipsum dolor facilis nostrum et magni dolorem animi repellat harum aperiam illum?</p>
+</div>
+    <div class="aboutform" style="background: white;">
+        <div class="firstext"  style="padding-top: 8%;">
+            <span style="margin-top: 5%;">Sign Up</span>
+            <p style="text-align: justify; padding-right: 20%;">harum sit temporibus. Nam tenetur natus labore, magnam laudantium assumenda reiciendis vitae quis aliquam est tempore.</p>
+        </div>
+        <div class="secondtext"> 
+            <form action="">
+            <label for="firstname"> First Name <br>
+                <input id="first" type="text" required>
+            </label><br>
+
+            <label> Last Name <br>
+                <input id="last" type="text" required>
+            </label><br>
+
+            <label for="email"> Email <br>
+                <input id="email" type="text" required>
+            </label><br>
+
+            <label for="pass"> Password <br>
+                <input id="pass" type="password" required>
+            </label><br>
+
+            <label for="firstname"> Confirm Password <br>
+                <input id="confirm" type="password" required>
+            </label><br>
+            <button><a href="#" id="signup">Sign Up</a></button>
+        </form>
+            <p id="the">
+                By clicking the Sign up button, you agree to our <span>Terms & Conditions</span> and <span>Privacy Policy</span>
+            </p>
+            <p id="already">Already have an account? <span><a href="signin.html">Login Here</a></span></p>
+        </div>
+    </div>
+
+<div class="footer">
+    <footer>
+        CODE HUB &copy All right reserved 2019
+
+    </footer>
+    <script>
+function sign(){
+let firstname = document.querySelector('#first');
+let lastname = document.querySelector('#last');
+let email = document.querySelector('#email');
+let pass = document.querySelector('#pass');
+let confirm = document.querySelector('#confirm');
+let erro = document.querySelector('.error');
+    if(firstname.value == '' || lastname.value == '' || email.value == '' || pass.value == '' || confirm.value == ''){
+        erro.style.display = 'block';
+    }
+    else {
+        if(pass.value === confirm.value){
+        let secondtext = document.querySelector('.aboutform');
+        secondtext.style.display = 'none';
+            const signi = {
+            firstname : firstname.value,
+            lastname : lastname.value,
+            email: email.value,
+            password: pass.value,
+            confirm: confirm.value, 
+
+        };
+        
+        
+        let title = document.querySelector('#title');
+        let text = document.querySelector('#text');
+        const message = 
+        `Dear user ${signi.firstname} ${signi.lastname} we have sent a message to your email address ${email.value} 
+        please kindly verify to continue sir. 
+        
+        Regards 
+        Team CodeHub
+        `
+        title.style.display = 'block';
+        text.textContent = message;
+    }
+    else if(pass.value !== confirm.value){
+        erro.style.display = "block";
+        erro.textContent = "password and confirm password is not match"
+    }
+    else {
+        erro.style.display = 'block';
+    }
+    }
+}
+
+let signup = document.querySelector('#signup');
+signup.addEventListener('click', sign);
+    
+    </script>
+</body>
+</html>
