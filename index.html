@@ -7,32 +7,39 @@
     <meta name="description" content="Code hub we train upcoming programmers">
     <link rel="stylesheet" href="style.css">
     <meta name="author" content="cybercode2000">
+    <script src="https://kit.fontawesome.com/406809e52f.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    
     <title>Code Hub</title>
 </head>
 <body>
     <header class="koko">
-        <div class="wrapper">
-            <div class="menu" id="menu">
-            <div class="menubar">
-                <div class="logo">
-                    <a href="index.html"><img src="logo.png"></a>
-                </div>
-                    <ul class="nav-area">
-                    <li><a id="home" style="background: #fff; color: #333; border-radius: 50px;" href="index.html"> Home</a></li>
-                    <li><a href="tutorials.html">Tutorials</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="signup.html">Sign Up</a></li>
-                    <li><a href="signin.html">Sign In</a></li>
-                    </ul>
-                
-            </div>
-        </div>
-        <div class="welcome-text">
-            <h1 id="codehub">Code Hub</h1>
-            <p class="ita">Welcome to the world of Computing</p><br>
-            <a style="font-weight: normal" id="getstarted" href="tutorials.html">Get Started</a>
+          <nav class="navbar navbar-expand-md head nav-menu fixed-top">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="logo.png">
+            </a>
+          <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#myNavBar">
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="navbar-nav ml-auto nav-area">
+                <li><a id="home" style="background: #fff; color: #333; border-radius: 50px;" href="index.html"> Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+            </ul>
+           </div>
+          
+        </nav>
 
+        <div class="welcome-text">
+            <div>
+            <h1 id="codehub" >Code Hub</h1>
+            <p class="ita">Welcome to the world of Computing</p>
+            <a class="mt-3" style="font-weight: normal" id="getstarted" href="tutorials.html">Get Started</a>
+        </div>
         </div>
     </header>
     <p class="header">Meet our Instructors</p>
@@ -95,7 +102,11 @@
             </div>
                 <a id="button1" href="#">learn more</a>
             </div>
-    </div>
+        </div>
+        <div class="view">
+            <a id="button2" href="tutorials.html">View all Our Courses</a>
+        </div>
+    
     <div class="aboutform">
                 <div id="title" style="margin-top: 5%; display: none">
                         <center><span style="font-family: Roboto;font-size: 50px;
@@ -159,6 +170,6 @@
             CodeHub &copy All right Reserved
         </footer>
     <script src="app1.js"></script>
-</div>  
+    </div>  
 </body>
 </html>
