@@ -7,7 +7,7 @@
 
 .koko {
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('books-coding-couch-1181298.jpg');
-    height: 100vh;
+    height: 70vh;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -64,7 +64,7 @@
 .welcome-text {
     position: absolute;
     width: 100%;
-    height: 121vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -629,7 +629,7 @@ button a {
     font-family: arial;
     margin: 0px;
     padding: 0px;
-    font-size: 13px;
+    font-size: 15px;
     color: white;
     animation-name: damicode1;
     animation-duration: 3s;
