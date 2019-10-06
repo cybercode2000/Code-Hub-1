@@ -6,7 +6,7 @@
 }
 
 .koko {
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('books-coding-couch-1181298.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('books-coding-couch-1181298.jpg');
     height: 75vh;
     background-size: cover;
     background-position: center;
@@ -18,11 +18,9 @@
     width: 100%;
 }
 .logo img {
-    width: 80px;
+    width: 60px;
     float: left;
-    /* margin-top: 10px; */
-    /* margin-left: 50px; */
-    height: 90px;
+    height: 60px;
     animation-name: logo;
     animation-duration: 5s;
 
@@ -336,6 +334,7 @@
 #button1 {
     border: 1px solid rgba(69, 159, 189, 0.918);
     padding: 13px 20px;
+    margin-top: 20px;
     border-radius: 50px;
     text-decoration: none;
     text-transform: uppercase;
@@ -516,7 +515,7 @@
     margin-top: 15px;
     background: white;
     width: 105%;
-    border: 1px solid gray;
+    border: 0px;
     height: 45px;
 }
 
